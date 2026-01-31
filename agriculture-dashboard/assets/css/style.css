@@ -1,0 +1,12 @@
+body { background:#f4f6f9; font-family:Segoe UI; }
+#sidebar { width:240px; background:#198754; color:#fff; min-height:100vh; transition:0.3s; }
+#sidebar.hidden { margin-left:-240px; }
+.avatar { width:70px; border-radius:50%; margin-bottom:10px; }
+.nav-link { color:#fff; cursor:pointer; margin-bottom:8px; }
+.nav-link:hover { background:rgba(255,255,255,0.2); }
+canvas { background:#fff; border-radius:8px; padding:10px; }
+.chart-img {
+  width: 100%;
+  height: 260px;        /* SAME HEIGHT FOR ALL */
+  object-fit: contain; /* keeps image ratio, no stretching */
+}
