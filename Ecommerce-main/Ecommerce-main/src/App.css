@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #111827;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px);
+  padding: 15px 40px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.glass {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 12px;
+  padding: 10px 22px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.product-img {
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.products-bg {
+  min-height: 100vh;
+  background-image: url("./assets/products-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 60px 0;
+}
+
+.products-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.products-content {
+  position: relative;
+  z-index: 2;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #111827, #1f2937);
+  color: white;
+  min-height: 100vh;
+  width: 240px;
+  padding: 30px 20px;
+}
+
+.sidebar h4 {
+  margin-bottom: 25px;
+}
+
+.sidebar a {
+  color: #d1d5db;
+  text-decoration: none;
+  display: block;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.hero-section {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 52px;
+  font-weight: 800;
+}
+
+.hero-sub {
+  color: #6b7280;
+  margin: 20px 0;
+}
+
+.hero-btn {
+  background: black;
+  color: white;
+  padding: 14px 34px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+}
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+.admin-title {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.admin-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+}
+
+.admin-card p {
+  color: gray;
+  margin-bottom: 8px;
+}
+
+.admin-card h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.lp-page {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lp-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.lp-card {
+  position: relative;
+  z-index: 10;
+  width: 350px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.admin-page {
+  min-height: 100vh;
+  width: 100%;
+
+  background-image: url("./assets/pink.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* soft light */
+.admin-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.7);
+}
+
+/* make layout above overlay */
+.admin-wrapper {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
